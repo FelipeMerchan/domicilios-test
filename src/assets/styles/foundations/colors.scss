@@ -1,5 +1,9 @@
 @import '../tokens/colors.scss';
 
+body {
+  background-color: $gray-4;
+}
+
 ::selection {
   /* color: $primary; */
 }

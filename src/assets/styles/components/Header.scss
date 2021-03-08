@@ -1,0 +1,83 @@
+/**
+ * The Header can have one behavior:
+ *
+ * Open the menu in mobile.
+ */
+
+@import '../tokens/typo.scss';
+@import '../tokens/colors.scss';
+@import '../tokens/spacing.scss';
+
+.Header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 100%;
+  block-size: 5rem;
+  box-shadow: $box-shadow;
+
+  &__brand {
+    font-size: $headline-1-mobile;
+    font-weight: $bold;
+  }
+
+  &__burger-button {
+    position: absolute;
+    right: 2.4rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    transform: scale(.5);
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__user {
+    display: none;
+
+    &.active {
+      position: absolute;
+      top:    5rem;
+      right:  0;
+      bottom: 0;
+      left:   0;
+      display: block;
+      inline-size: 100%;
+      block-size: calc(100vh - 5rem);
+      padding: $space-3;
+      background-color: $white;
+    }
+
+    span {
+      font-size: $p-mobile;
+      color: $gray-1;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Header {
+    block-size: 10rem;
+
+    &__brand {
+      font-size: $headline-1;
+    }
+
+    &__burger-button {
+      display: none;
+    }
+
+    &__user {
+      position: absolute;
+      display: block;
+      right: 4rem;
+
+      span {
+        font-size: $p;
+      }
+    }
+  }
+}

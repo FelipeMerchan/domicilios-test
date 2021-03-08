@@ -1,0 +1,60 @@
+@import '../tokens/typo.scss';
+@import '../tokens/colors.scss';
+@import '../tokens/spacing.scss';
+
+.FormEditor {
+  margin-block-end: $space-3;
+  border: 1px solid $gray-2;
+  background-color: $white;
+
+  &__input {
+    inline-size: 100%;
+    block-size: 5.1rem;
+    padding: $space-2;
+    border: 0;
+    font-size: $p-mobile;
+    color: $black;
+    border-radius: .2rem;
+
+    &::placeholder {
+      font-size: $p-mobile;
+      color: $primary-color;
+    }
+  }
+
+  &__footer {
+    display: none;
+
+    &.active {
+      display: flex;
+      justify-content: flex-end;
+      padding: $space;
+      border-block-start: 1px solid $gray-2;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .FormEditor {
+    margin-block-end: $space-4;
+
+    &__input {
+      block-size: 8rem;
+      padding: $space-3;
+      border: 0;
+      font-size: $p;
+
+
+      &::placeholder {
+        font-size: $p;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: $space;
+      border-block-start: 1px solid $gray-2;
+    }
+  }
+}

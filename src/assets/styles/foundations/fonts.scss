@@ -11,19 +11,15 @@ html {
   font-family: $font;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  color: $black_normal;
+  color: $black;
 }
 
 h1 {
-  font-size: $h1;
+  font-size: $headline-1;
 }
 
 h2 {
-  font-size: $h2;
-}
-
-h3 {
-  font-size: $h3;
+  font-size: $subtitle-1;
 }
 
 h1,

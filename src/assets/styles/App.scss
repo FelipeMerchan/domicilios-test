@@ -1,5 +1,40 @@
 @import './foundations/colors.scss';
 @import './foundations/fonts.scss';
 @import './foundations/spacing.scss';
-@import './main.scss';
+@import './helpers.scss';
 @import './vendors/normalize.scss';
+
+/**
+ * CONTENTS
+ *
+ * DESIGN TOKENS
+ * colors...............List of colors and shades.
+ * spacing..............List of spacing based on units, where 1 unit is equals to 8px.
+ * typo.................List of typographic sizes and weights.
+ *
+ * FOUNDATIONS
+ * colors...............Basic parts that we can configure in the system in terms of colors and shades.
+ * spacing..............Basic parts that we can configure in the system in terms of spacing.
+ * fonts................Basic parts that we can configure in the system in terms of fonts.
+ *
+ * HELPERS
+ * wrapper..............Utility for the container in charge of providing a width to the content and centering it horizontally.
+ *
+ * HERRAMIENTAS
+ * Mixins...............Useful Mixins.
+ *
+ * VENDORS
+ * Normalize.scss.......It makes browsers render all elements more consistently and in line with modern standards. It is precisely
+ *                      aimed only at the styles that need to be standardized.
+ *
+ * OBJECTS
+ * Wrappers.............Wrap the project content.
+ *
+ * COMPONENTS
+ * Commentary...........Contains the comments related to a Post.
+ * FormEditor...........Container component that handles the submission of data from a post.
+ * Header...............The main page header.
+ * Post.................Component of generated posts.
+ * Input................Data capture field.
+ * Button...............Button elements.
+ */

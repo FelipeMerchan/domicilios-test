@@ -1,0 +1,62 @@
+@import '../tokens/colors.scss';
+@import '../tokens/spacing.scss';
+@import '../tokens/typo.scss';
+
+.Post {
+  margin-block-end: $space-3;
+  border: 1px solid $gray-2;
+  background-color: $white;
+  border-radius: .2rem;
+  box-shadow: $card-shadow;
+
+  & > div:first-child {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-column-gap: $space-2;
+    padding: $space-3 $space $space-2;
+  }
+
+  &__avatarContainer {
+    inline-size: 4rem;
+    block-size: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__user {
+    display: block;
+    font-size: $p-mobile;
+    color: $primary-color;
+    font-weight: $bold;
+  }
+
+  &__time {
+    font-size: $small-mobile;
+    color: $gray-1;
+  }
+
+  &__text {
+    font-size: $p-mobile;
+    margin: 0;
+    margin-block-start: $space;
+  }
+
+  &__actions {
+    display: flex;
+    border-block-end: 1px solid $gray-2;
+
+    button {
+      inline-size: 50%;
+      padding: 1.2rem;
+      border: none;
+      color: $primary-color;
+      font-size: $p-mobile;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:first-child {
+        border-inline-end: 1px solid $gray-2;
+      }
+    }
+  }
+}

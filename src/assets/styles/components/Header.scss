@@ -15,6 +15,7 @@
   justify-content: center;
   inline-size: 100%;
   block-size: 5rem;
+  box-shadow: $box-shadow;
 
   &__brand {
     font-size: $headline-1-mobile;
@@ -53,6 +54,30 @@
     span {
       font-size: $p-mobile;
       color: $gray-1;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Header {
+    block-size: 10rem;
+
+    &__brand {
+      font-size: $headline-1;
+    }
+
+    &__burger-button {
+      display: none;
+    }
+
+    &__user {
+      position: absolute;
+      display: block;
+      right: 4rem;
+
+      span {
+        font-size: $p;
+      }
     }
   }
 }

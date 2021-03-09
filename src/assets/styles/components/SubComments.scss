@@ -20,3 +20,18 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .SubComments {
+    padding: $space-4 $space-3;
+
+    &__input {
+      padding: $space-3;
+      font-size: $small;
+
+      &::placeholder {
+        font-size: $small;
+      }
+    }
+  }
+}

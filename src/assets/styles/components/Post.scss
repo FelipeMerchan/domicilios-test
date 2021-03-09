@@ -50,12 +50,63 @@
       padding: 1.2rem;
       border: none;
       color: $primary-color;
-      font-size: $p-mobile;
+      font-size: $button-mobile;
       background-color: transparent;
       cursor: pointer;
 
       &:first-child {
         border-inline-end: 1px solid $gray-2;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Post {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-block-end: $space-4;
+
+    & > div:first-child {
+      order: 2;
+      grid-template-columns: 6rem 1fr;
+      grid-column-gap: $space-3;
+      padding: $space-3 $space-3 $space-2;
+    }
+
+    &__avatarContainer {
+      inline-size: 6rem;
+      block-size: 6rem;
+    }
+
+    &__user {
+      font-size: $p;
+    }
+
+    &__time {
+      font-size: $small;
+    }
+
+    &__text {
+      font-size: $p;
+      margin-block-start: $space-2;
+    }
+
+    &__actions {
+      order: 1;
+      border-block-end: 0;
+      margin-block-end: $space-5;
+      margin-inline-start: 8.8rem;
+
+      button {
+        inline-size: auto;
+        padding: 0 1.2rem;
+        color: $primary-color;
+        font-size: $button;
+
+        &:first-child {
+          border-inline-end: 0;
+        }
       }
     }
   }

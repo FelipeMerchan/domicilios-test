@@ -45,6 +45,7 @@
       right:  0;
       bottom: 0;
       left:   0;
+      z-index: 2;
       display: block;
       inline-size: 100%;
       block-size: calc(100vh - 5rem);
@@ -64,7 +65,7 @@
     block-size: 10rem;
 
     &__brand {
-      font-size: $headline-1;
+      font-size: $subtitle-1;
     }
 
     &__burger-button {

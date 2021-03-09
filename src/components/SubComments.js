@@ -6,9 +6,11 @@ import '../assets/styles/components/SubComments.scss'
 export const SubComments = () => {
   return (
     <div className="SubComments">
-      <Commentary />
-      <Commentary />
-      <Commentary />
+      <div>
+        <Commentary />
+        <Commentary />
+        <Commentary />
+      </div>
       <form>
         <label htmlFor="commentary">
           <input className="SubComments__input" type="text" placeholder="Escribe un comentario" id="commentary" name="commentary" required />

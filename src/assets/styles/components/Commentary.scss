@@ -37,3 +37,32 @@
     font-size: $small-mobile;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .Commentary {
+    grid-template-columns: 5.5rem 1fr;
+    grid-column-gap: 6rem;
+
+    &:last-child {
+      margin-block-end: $space-4;
+    }
+
+    &__avatarContainer {
+      inline-size: 5.5rem;
+      block-size: 5.5rem;
+    }
+
+    &__user {
+      margin-inline-end: $space-2;
+      font-size: $small;
+    }
+
+    &__text {
+      font-size: $small;
+    }
+
+    &__time {
+      font-size: $small;
+    }
+  }
+}

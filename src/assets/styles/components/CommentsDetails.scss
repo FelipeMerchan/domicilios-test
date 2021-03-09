@@ -12,6 +12,10 @@
 
   & > div {
     display: inherit;
+
+    span {
+      display: none;
+    }
   }
 
   &__avatarContainer {
@@ -26,7 +30,7 @@
       left: -.6rem;
     }
 
-    &:last-child {
+    &:nth-of-type(3) {
       position: relative;
       left: -1.2rem;
     }
@@ -35,5 +39,27 @@
   span {
     color: $gray-1;
     font-size: $small-mobile;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .CommentsDetails {
+    order: 1;
+    padding: $space-2 $space-3;
+
+    & > div {
+      align-items: center;
+
+      span {
+        display: initial;
+        margin-inline-start: $space-2;
+        color: $primary-color;
+        font-size: $small;
+      }
+    }
+
+    span {
+      font-size: $small;
+    }
   }
 }

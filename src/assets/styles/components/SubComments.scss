@@ -1,0 +1,37 @@
+@import '../tokens/colors.scss';
+@import '../tokens/spacing.scss';
+@import '../tokens/typo.scss';
+
+.SubComments {
+  padding: $space-2 $space;
+  background-color: $gray-3;
+
+  &__input {
+    inline-size: 100%;
+    border: 1px solid $gray-2;
+    padding: $space-2 $space;
+    font-size: 1.4rem;
+    color: $black;
+    border-radius: .2rem;
+
+    &::placeholder {
+      font-size: 1.4rem;
+      color: $gray-1;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .SubComments {
+    padding: $space-4 $space-3;
+
+    &__input {
+      padding: $space-3;
+      font-size: $small;
+
+      &::placeholder {
+        font-size: $small;
+      }
+    }
+  }
+}

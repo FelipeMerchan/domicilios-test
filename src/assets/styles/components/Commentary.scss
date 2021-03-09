@@ -1,0 +1,68 @@
+@import '../tokens/colors.scss';
+@import '../tokens/spacing.scss';
+@import '../tokens/typo.scss';
+
+.Commentary {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  grid-column-gap: 1.2rem;
+  margin-block-end: $space-2;
+
+  &:last-child {
+    margin-block-end: $space-3;
+  }
+
+  &__avatarContainer {
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__user {
+    margin-inline-end: $space-half;
+    color: $primary-color;
+    font-weight: $bold;
+    font-size: 1.4rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+
+  &__time {
+    display: block;
+    margin-block-start: $space-half;
+    color: $gray-1;
+    font-size: $small-mobile;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Commentary {
+    grid-template-columns: 5.5rem 1fr;
+    grid-column-gap: 6rem;
+
+    &:last-child {
+      margin-block-end: $space-4;
+    }
+
+    &__avatarContainer {
+      inline-size: 5.5rem;
+      block-size: 5.5rem;
+    }
+
+    &__user {
+      margin-inline-end: $space-2;
+      font-size: $small;
+    }
+
+    &__text {
+      font-size: $small;
+    }
+
+    &__time {
+      font-size: $small;
+    }
+  }
+}

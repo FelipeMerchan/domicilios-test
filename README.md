@@ -32,6 +32,11 @@ You can execute the following command:
 - Mobile First
 - BEM (with Sass)
 
+## UI
+- [Design System](https://www.figma.com/proto/mRal1IV8tRqHGhU2T47ZuD/domicilios-test?node-id=1%3A18&viewport=634%2C-115%2C0.1726495772600174&scaling=scale-down")
+- [High-fidelity prototyping - mobile](https://www.figma.com/proto/mRal1IV8tRqHGhU2T47ZuD/domicilios-test?node-id=5%3A123&viewport=86%2C371%2C0.30559757351875305&scaling=scale-down "High-fidelity prototyping - mobile")
+- [High-fidelity prototyping - desktop](https://www.figma.com/proto/mRal1IV8tRqHGhU2T47ZuD/domicilios-test?node-id=1%3A2&viewport=289%2C255%2C0.17627708613872528&scaling=scale-down "High-fidelity prototyping - desktop")
+
 ## Preview
 
 ### Home Screen

@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": "2de30c42-9deb",
+      "user": "Juan Rodriguez",
+      "summary": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      "likes": 13,
+      "avatarUrl": "https://res.cloudinary.com/dy1xcx7kw/image/upload/v1615181820/Domicilios%20Test/juan-rodriguez_bpd5jp.jpg",
+      "comments": [
+        {
+          "user": "Elena",
+          "comment": "Lorem ipsum dolor sit amet, consectetuer"
+        },
+        {
+          "user": "Elena",
+          "comment": "Lorem ipsum dolor sit amet, consectetuer"
+        },
+        {
+          "user": "Elena",
+          "comment": "Lorem ipsum dolor sit amet, consectetuer"
+        }
+      ]
+    },
+    {
+      "id": "d00d3614-101a",
+      "user": "Liliana Jimenez",
+      "summary": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      "likes": 13,
+      "avatarUrl": "https://res.cloudinary.com/dy1xcx7kw/image/upload/v1615336802/Domicilios%20Test/liliana-jimenez_vrfg9q.jpg",
+      "comments": []
+    }
+  ]
+}

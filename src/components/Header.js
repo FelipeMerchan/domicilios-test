@@ -1,11 +1,10 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 
 import { BurgerButtonIcon } from './BurgerButtonIcon'
 import { CloseIcon } from './CloseIcon'
 import '../assets/styles/components/Header.scss'
 
 export const Header = ({ user }) => {
-  const menu = useRef(null)
   const [open, setOpen] = useState(false)
 
   const Icon = open ? CloseIcon : BurgerButtonIcon
@@ -18,7 +17,7 @@ export const Header = ({ user }) => {
         className="Header__burger-button"
         onClick={() => setOpen(!open)}
       >
-        <Icon ref={menu} />
+        <Icon />
       </button>
       <div className={`Header__user ${open ? 'active' : ''}`}>
         <span>Hola! {user}</span>

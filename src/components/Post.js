@@ -1,28 +1,36 @@
 import React from 'react'
 
 import { CommentsDetails } from './CommentsDetails'
+import { FavButton } from './FavButton'
 import { SubComments } from './SubComments'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 import '../assets/styles/components/Post.scss'
 
-export const Post = () => {
+export const Post = ({ id, user, summary, likes, avatarUrl, comments }) => {
+  const key = `like-${id}`
+
+  const [liked, setLiked] = useLocalStorage(key, false)
+
+  const handleFavClick = () => setLiked(!liked)
+
   return (
     <article className="Post">
       <div>
         <figure className="Post__avatarContainer">
-          <img className="Post__avatar" src="https://res.cloudinary.com/dy1xcx7kw/image/upload/v1615181820/Domicilios%20Test/juan-rodriguez_bpd5jp.jpg" width="40" title="Imagen de perfil de Juan" alt="Imagen de perfil de Juan" />
+          <img className="Post__avatar" src={avatarUrl} width="40" title={`Imagen de perfil de ${user}`} alt={`Imagen de perfil de ${user}`} />
         </figure>
         <div>
-          <span className="Post__user">Juan Rodriguez</span>
+          <span className="Post__user">{ user }</span>
           <span className="Post__time">hace 40 minutos</span>
-          <p className="Post__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+          <p className="Post__text">{summary}</p>
         </div>
       </div>
-      <CommentsDetails />
+      <CommentsDetails likes={likes} comments={comments} />
       <div className="Post__actions">
-        <button type="button">Reaccionar</button>
+        <FavButton liked={liked} onClick={handleFavClick}/>
         <button type="button">Comentar</button>
       </div>
-      <SubComments />
+      {comments.length === 0 ? '' : <SubComments />}
     </article>
   )
 }
